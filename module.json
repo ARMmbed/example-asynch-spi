@@ -18,8 +18,17 @@
   "extraIncludes": [],
   "dependencies": {
     "mbed": "ARMmbed/mbed-sdk-private",
-    "mbed-cpputest": "ARMmbed/mbed-cpputest-private#~0.0.4"
+    "mbed-cpputest": "ARMmbed/mbed-cpputest-private#~0.0.6"
   },
   "targetDependencies": {},
-  "bin": "./source"
+  "bin": "./source",
+  "scripts": {
+    "testReporter": [
+      "mbedgt",
+      "--digest",
+      "stdin",
+      "-v",
+      "-V"
+    ]
+  }
 }
