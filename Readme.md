@@ -41,7 +41,9 @@ MISO, MOSI and SSEL pin definitions are target-specific. To function correctly, 
     }
     ```
 
-3. Finally, locate those pins on the board's [pinout picture](https://www.mbed.com/en/development/hardware/boards/nxp/frdm_k64f/#overview).
+3. Locate the MOSI and MISO pins (i.e. PTD2, PTD3) on the board's pinout picture: <img src="https://developer.mbed.org/media/uploads/sam_grove/frdm-k64f-pinnout-1.jpg" width="700">
+
+4. Finally, create a loopback, connect the MISO and MOSI pins together by a wire. 
 
 ### Getting started
 
